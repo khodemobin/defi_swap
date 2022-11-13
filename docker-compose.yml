@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+
+  db:
+    restart: always
+    image: postgres:13 #postgres:12.5
+    tty: true
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_PASSWORD: "UkqyHQqRsS3GxuW49uxvg6aNaEEZDubz"
+      POSTGRES_DB: db2
